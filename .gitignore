@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+.direnv/
+.DS_Store
+*.log
+
+/envs/*
+!/envs/.env.example
+.env
+.env.*
+!.env.example
+!.env.sample
