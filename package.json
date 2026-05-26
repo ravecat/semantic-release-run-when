@@ -17,7 +17,7 @@
     "check": "pnpm run lint && pnpm run test",
     "format": "biome format --write . && pnpm run format:md",
     "lint": "biome check . && pnpm run lint:md",
-    "test": "node --test",
+    "test": "node --test test/*.test.js",
     "format:md": "prettier --write \"*.md\"",
     "lint:fix": "biome check --write . && pnpm run format:md",
     "lint:md": "prettier --check \"*.md\""
@@ -42,5 +42,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ravecat/semantic-release-run-when.git"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^4.0.0"
   }
 }
